@@ -13,6 +13,7 @@ This demo aims to show off Descope and Neon Authorize together. In particular th
 7. From the get started drawer that pops out (which you can get back to from the Neon Authorize page later if you close it) – run all the blocks under Setup Roles header.
 8. From the "Setup Environment Variables" heading, copy the authenticated URL and paste that into your .env/.env.local. You will have to add VITE_ in the front of what's copied because that's how Vite knows which secrets can be used in the frontend. Notice this connection string has no password.
 9. Clone this repo
-10. Run `npm install`
-11. Run `npm run dev`
-12. Navigate to [localhost:5173](http://localhost:5173)
+10. In the Neon console, open the SQL Editor and run the queries in schema.sql (or via psql).
+11. Run `npm install`
+12. Run `npm run dev`
+13. Navigate to [localhost:5173](http://localhost:5173)
