@@ -1,14 +1,14 @@
 <img width="250px" src="https://neon.tech/brand/neon-logo-dark-color.svg" />
 
-# Neon Authorize + Descope Example (SQL from the Frontend)
+# Neon RLS Authorize + Descope Example (SQL from the Frontend)
 
-A quick start React template demonstrating secure user authentication and authorization using Neon Authorize with Descope integration. This guide showcases how to implement client-side row-level security by executing SQL directly from the frontend.
+A quick start React template demonstrating secure user authentication and authorization using Neon RLS Authorize with Descope integration. This guide showcases how to implement client-side row-level security by executing SQL directly from the frontend.
 
 ## Features
 
 - React application with Vite
 - User authentication powered by Descope
-- Row-level security using Neon Authorize
+- Row-level security using Neon RLS Authorize
 - Ready-to-deploy configuration for Vercel, Netlify and Render
 
 ## Prerequisites
@@ -21,9 +21,9 @@ A quick start React template demonstrating secure user authentication and author
 
 Deploy directly to your preferred hosting platform:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/dhanushreddy291/descope-react-frontend-neon-authorize&env=VITE_DESCOPE_PROJECT_ID,VITE_DATABASE_AUTHENTICATED_URL&project-name=neon-authorize-descope&repository-name=neon-authorize-descope)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/dhanushreddy291/descope-react-frontend-neon-authorize)
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/dhanushreddy291/descope-react-frontend-neon-authorize)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/dhanushreddy291/descope-react-frontend-neon-rls-authorize&env=VITE_DESCOPE_PROJECT_ID,VITE_DATABASE_AUTHENTICATED_URL&project-name=neon-rls-authorize-descope&repository-name=neon-rls-authorize-descope)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/dhanushreddy291/descope-react-frontend-neon-rls-authorize)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/dhanushreddy291/descope-react-frontend-neon-rls-authorize)
 
 ## Local Development Setup
 
@@ -33,12 +33,12 @@ Deploy directly to your preferred hosting platform:
 2. Get your **Project ID** from the "Project Settings" tab.
    ![Descope Project ID](/images/descope-project-id.png)
 
-### 2. Set Up Neon Authorize
+### 2. Set Up Neon RLS Authorize
 
-1. Open your Neon Console and click "Authorize".
+1. Open your Neon Console and click "RLS Authorize".
 2. Add a new authentication provider.
 3. Set the JWKS URL to: `https://api.descope.com/{YOUR_DESCOPE_PROJECT_ID}/.well-known/jwks.json`
-   ![Neon Authorize JWKS URL](/images/neon-authorize-jwks-url.png)
+   ![Neon RLS Authorize JWKS URL](/images/neon-authorize-jwks-url.png)
    > Replace `{YOUR_DESCOPE_PROJECT_ID}` with your Descope Project ID.
 
 ### 3. Local Installation
@@ -46,8 +46,8 @@ Deploy directly to your preferred hosting platform:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/dhanushreddy291/descope-react-frontend-neon-authorize
-cd descope-react-frontend-neon-authorize
+git clone https://github.com/dhanushreddy291/descope-react-frontend-neon-rls-authorize
+cd descope-react-frontend-neon-rls-authorize
 ```
 
 2. Install dependencies:
@@ -94,15 +94,15 @@ psql "<YOUR_NEON_DATABASE_URL>" -f schema.sql
 
 ## Important: Production Setup
 
-Ensure your Descope project is configured for production and the JWKS URL in Neon Authorize is accurate. You can select the production environment in Descope by clicking on the "Production" toggle in the "Environment Settings" tab under "Project Settings".
+Ensure your Descope project is configured for production and the JWKS URL in Neon RLS Authorize is accurate. You can select the production environment in Descope by clicking on the "Production" toggle in the "Environment Settings" tab under "Project Settings".
 
 ![Descope use in production](/images/descope-use-in-production.png)
 
 ## Learn More
 
-- [Neon Authorize Tutorial](https://neon.tech/docs/guides/neon-authorize-tutorial)
+- [Neon RLS Authorize Tutorial](https://neon.tech/docs/guides/neon-authorize-tutorial)
 - [Descope Documentation](https://docs.descope.com)
-- [Neon Authorize + Descope Integration](https://neon.tech/docs/guides/neon-authorize-descope)
+- [Neon RLS Authorize + Descope Integration](https://neon.tech/docs/guides/neon-authorize-descope)
 
 ## Authors
 
